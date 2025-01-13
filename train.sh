@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per=4 --master_port=20001 tools/train.py configs/exp/t2vparser/msrvtt.py --work-dir works_msrvtt/wokrname --launcher pytorch --train 1
